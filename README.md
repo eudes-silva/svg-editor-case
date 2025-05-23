@@ -1,13 +1,19 @@
+# Author
+
+Eudes Silva
+
 # SvgEditorCase
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+This project uses [pnpm](https://pnpm.io/pt/) to manage packages.
+This project was generated and runs using [NodeJS](https://nodejs.org/en) version 22.11.0.
 
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+pnpm start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
@@ -31,7 +37,7 @@ ng generate --help
 To build the project run:
 
 ```bash
-ng build
+pnpm build
 ```
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
@@ -41,7 +47,7 @@ This will compile your project and store the build artifacts in the `dist/` dire
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
 ```bash
-ng test
+pnpm test
 ```
 
 ## Running end-to-end tests
