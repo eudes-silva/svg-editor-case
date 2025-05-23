@@ -1,0 +1,10 @@
+<div class="controls">
+  <button
+    [class]="btn?.selected ? 'btn btn-selected' : 'btn'"
+    type="button"
+    *ngFor="let btn of btns; index as i; trackBy: trackByBtnId"
+    (click)="btn.trigger()"
+  >
+    {{ btn.value }}
+  </button>
+</div>

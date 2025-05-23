@@ -1,0 +1,25 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  & .btn {
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+  & .btn-selected{
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    text-wrap: nowrap;
+    color: #fff;
+    background-color: #010101;
+  }
+}
+
