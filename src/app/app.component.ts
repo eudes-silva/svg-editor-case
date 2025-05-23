@@ -149,6 +149,12 @@ export class AppComponent {
       event.stopPropagation(); 
       event.preventDefault(); 
       this.shapes = this.shapes.filter(shape=>shape.id!==id);
+      if(!this.shapes.some(shape=>shape.type==='rect')){
+        this.selectedRectId = null;
+      }
+      if(!this.shapes.some(shape=>shape.type==='star')){
+        this.selectedStarId = null;
+      }
     }
   }
 }
