@@ -64,6 +64,8 @@
               [x]="shape.x"
               [y]="shape.y"
               (click)="$event.stopPropagation(); onRectClick(shape.id)"
+              (keydown)="onKeyPress($event, shape.id)"
+              tabindex="0"
             ></rect>
             <polygon
               *ngIf="shape.type === 'star'"
@@ -71,8 +73,10 @@
               starClass="starShape"
               [numPoints]="shape.numPoints ?? 3"
               [innerRadius]="shape.innerRadius ?? 15"
-              [attr.transform]="'translate(' + shape.x + ',' + shape.y + ')'"
+              [attr.transform]="`translate(${shape.x},${shape.y})`"
               (click)="$event.stopPropagation(); onStarClick(shape.id)"
+              (keydown)="onKeyPress($event, shape.id)"
+              tabindex="0"
             ></polygon>
           </ng-container>
         </svg>

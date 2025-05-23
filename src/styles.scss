@@ -120,3 +120,7 @@ svg {
   max-width: 100%;
   display: inline-block;
 }
+
+[tabindex]:focus {
+  outline: none;
+}

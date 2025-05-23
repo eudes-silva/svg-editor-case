@@ -143,4 +143,12 @@ export class AppComponent {
         : shape
     );
   }
+
+  onKeyPress(event: KeyboardEvent, id: number): void {
+    if(event.key==='Delete'){
+      event.stopPropagation(); 
+      event.preventDefault(); 
+      this.shapes = this.shapes.filter(shape=>shape.id!==id);
+    }
+  }
 }
