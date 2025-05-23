@@ -1,0 +1,48 @@
+.container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.canvasSvg {
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid #000;
+}
+
+.controls-btns{
+  margin-top: 0.5rem;
+}
+
+.rectShape, .starShape{
+  cursor: pointer;
+}
+
+.rect-controls{
+  padding: 1rem;
+  border: 1px solid #aaaaaa;
+  position: absolute;
+  left:0; 
+  top: 0;
+  transform: translateY(calc(-100% - 0.5rem));
+}
+
+.star-controls{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #aaaaaa;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(calc(-100% - 0.5rem));
+}
+
+.corner-round{
+  background-color: #e4e4e4;
+  border: 1px solid #aaaaaa;
+  padding: 0.2rem 0.5rem;
+}
